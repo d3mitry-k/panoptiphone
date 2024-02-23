@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in /usr/share/wireshark or at https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob_plain;f=pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/2.6.10" time="Mon Feb 19 21:14:11 2024" capture_file="Vatican1/probes-2013-02-24.pcap0">
+<packet>
+    <proto name="geninfo" pos="0" showname="General information" size="150">
+        <field name="num" pos="0" show="1" showname="Number" value="1" size="150"/>
+        <field name="len" pos="0" show="150" showname="Frame Length" value="96" size="150"/>
+        <field name="caplen" pos="0" show="150" showname="Captured Length" value="96" size="150"/>
+        <field name="timestamp" pos="0" show="Feb 24, 2013 09:51:12.880001000 EET" showname="Captured Time" value="1361692272.880001000" size="150"/>
+    </proto>
+    <proto name="frame" showname="Frame 1: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits)" size="150" pos="0">
+        <field name="frame.encap_type" showname="Encapsulation type: IEEE 802.11 plus radiotap radio header (23)" size="0" pos="0" show="23"/>
+        <field name="frame.time" showname="Arrival Time: Feb 24, 2013 09:51:12.880001000 EET" size="0" pos="0" show="Feb 24, 2013 09:51:12.880001000 EET"/>
+        <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+        <field name="frame.time_epoch" showname="Epoch Time: 1361692272.880001000 seconds" size="0" pos="0" show="1361692272.880001000"/>
+        <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+        <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+        <field name="frame.time_relative" showname="Time since reference or first frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+        <field name="frame.number" showname="Frame Number: 1" size="0" pos="0" show="1"/>
+        <field name="frame.len" showname="Frame Length: 150 bytes (1200 bits)" size="0" pos="0" show="150"/>
+        <field name="frame.cap_len" showname="Capture Length: 150 bytes (1200 bits)" size="0" pos="0" show="150"/>
+        <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="0"/>
+        <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="0"/>
+        <field name="frame.protocols" showname="Protocols in frame: radiotap:wlan_radio:wlan" size="0" pos="0" show="radiotap:wlan_radio:wlan"/>
+    </proto>
+    <proto name="radiotap" showname="Radiotap Header v0, Length 26" size="26" pos="0">
+        <field name="radiotap.version" showname="Header revision: 0" size="1" pos="0" show="0" value="00"/>
+        <field name="radiotap.pad" showname="Header pad: 0" size="1" pos="1" show="0" value="00"/>
+        <field name="radiotap.length" showname="Header length: 26" size="2" pos="2" show="26" value="1a00"/>
+        <field name="radiotap.present" showname="Present flags" size="4" pos="4" show="" value="">
+            <field name="radiotap.present.word" showname="Present flags word: 0x0000482d" size="4" pos="4" show="0x0000482d" value="2d480000">
+                <field name="radiotap.present.tsft" showname=".... .... .... .... .... .... .... ...1 = TSFT: Present" size="4" pos="4" show="1" value="1" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.flags" showname=".... .... .... .... .... .... .... ..0. = Flags: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.rate" showname=".... .... .... .... .... .... .... .1.. = Rate: Present" size="4" pos="4" show="1" value="1" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.channel" showname=".... .... .... .... .... .... .... 1... = Channel: Present" size="4" pos="4" show="1" value="1" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.fhss" showname=".... .... .... .... .... .... ...0 .... = FHSS: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.dbm_antsignal" showname=".... .... .... .... .... .... ..1. .... = dBm Antenna Signal: Present" size="4" pos="4" show="1" value="1" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.dbm_antnoise" showname=".... .... .... .... .... .... .0.. .... = dBm Antenna Noise: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.lock_quality" showname=".... .... .... .... .... .... 0... .... = Lock Quality: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.tx_attenuation" showname=".... .... .... .... .... ...0 .... .... = TX Attenuation: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.db_tx_attenuation" showname=".... .... .... .... .... ..0. .... .... = dB TX Attenuation: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.dbm_tx_power" showname=".... .... .... .... .... .0.. .... .... = dBm TX Power: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.antenna" showname=".... .... .... .... .... 1... .... .... = Antenna: Present" size="4" pos="4" show="1" value="1" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.db_antsignal" showname=".... .... .... .... ...0 .... .... .... = dB Antenna Signal: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.db_antnoise" showname=".... .... .... .... ..0. .... .... .... = dB Antenna Noise: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.rxflags" showname=".... .... .... .... .1.. .... .... .... = RX flags: Present" size="4" pos="4" show="1" value="1" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.xchannel" showname=".... .... .... .0.. .... .... .... .... = Channel+: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.mcs" showname=".... .... .... 0... .... .... .... .... = MCS information: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.ampdu" showname=".... .... ...0 .... .... .... .... .... = A-MPDU Status: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.vht" showname=".... .... ..0. .... .... .... .... .... = VHT information: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.timestamp" showname=".... .... .0.. .... .... .... .... .... = frame timestamp: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.he" showname=".... .... 0... .... .... .... .... .... = HE information: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.he_mu" showname=".... ...0 .... .... .... .... .... .... = HE-MU information: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.reserved" showname="...0 000. .... .... .... .... .... .... = Reserved: 0x0" size="4" pos="4" show="0x00000000" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.rtap_ns" showname="..0. .... .... .... .... .... .... .... = Radiotap NS next: False" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.vendor_ns" showname=".0.. .... .... .... .... .... .... .... = Vendor NS next: False" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+                <field name="radiotap.present.ext" showname="0... .... .... .... .... .... .... .... = Ext: Absent" size="4" pos="4" show="0" value="0" unmaskedvalue="2d480000"/>
+            </field>
+        </field>
+        <field name="radiotap.mactime" showname="MAC timestamp: 2486906" size="8" pos="8" show="2486906" value="7af2250000000000"/>
+        <field name="radiotap.datarate" showname="Data Rate: 8.0 Mb/s" size="1" pos="16" show="8" value="10"/>
+        <field name="radiotap.channel.freq" showname="Channel frequency: 2412 [BG 1]" size="2" pos="18" show="2412" value="6c09"/>
+        <field name="radiotap.channel.flags" showname="Channel flags: 0x00a0, Complementary Code Keying (CCK), 2 GHz spectrum" size="2" pos="20" show="0x000000a0" value="a000">
+            <field name="radiotap.channel.flags.turbo" showname=".... .... ...0 .... = Turbo: False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.cck" showname=".... .... ..1. .... = Complementary Code Keying (CCK): True" size="2" pos="20" show="1" value="1" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.ofdm" showname=".... .... .0.. .... = Orthogonal Frequency-Division Multiplexing (OFDM): False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.2ghz" showname=".... .... 1... .... = 2 GHz spectrum: True" size="2" pos="20" show="1" value="1" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.5ghz" showname=".... ...0 .... .... = 5 GHz spectrum: False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.passive" showname=".... ..0. .... .... = Passive: False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.dynamic" showname=".... .0.. .... .... = Dynamic CCK-OFDM: False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.gfsk" showname=".... 0... .... .... = Gaussian Frequency Shift Keying (GFSK): False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.gsm" showname="...0 .... .... .... = GSM (900MHz): False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.sturbo" showname="..0. .... .... .... = Static Turbo: False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.half" showname=".0.. .... .... .... = Half Rate Channel (10MHz Channel Width): False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+            <field name="radiotap.channel.flags.quarter" showname="0... .... .... .... = Quarter Rate Channel (5MHz Channel Width): False" size="2" pos="20" show="0" value="0" unmaskedvalue="a000"/>
+        </field>
+        <field name="radiotap.dbm_antsignal" showname="Antenna signal: -45dBm" size="1" pos="22" show="-45" value="d3"/>
+        <field name="radiotap.antenna" showname="Antenna: 1" size="1" pos="23" show="1" value="01"/>
+        <field name="radiotap.rxflags" showname="RX flags: 0x0000" size="2" pos="24" show="0x00000000" value="0000">
+            <field name="radiotap.rxflags.badplcp" showname=".... .... .... .... .... ..0. = Bad PLCP: False" size="2" pos="24" show="0" value="0" unmaskedvalue="0000"/>
+        </field>
+    </proto>
+    <proto name="wlan_radio" showname="802.11 radio information" size="0" pos="26">
+        <field name="wlan_radio.phy" showname="PHY type: 802.11b (4)" size="0" pos="26" show="4"/>
+        <field name="wlan_radio.data_rate" showname="Data rate: 8.0 Mb/s" size="0" pos="26" show="8"/>
+        <field name="wlan_radio.channel" showname="Channel: 1" size="0" pos="26" show="1"/>
+        <field name="wlan_radio.frequency" showname="Frequency: 2412MHz" size="0" pos="26" show="2412"/>
+        <field name="wlan_radio.signal_dbm" showname="Signal strength (dBm): -45dBm" size="0" pos="26" show="-45"/>
+        <field name="wlan_radio.timestamp" showname="TSF timestamp: 2486906" size="0" pos="26" show="2486906"/>
+        <field name="wlan_radio.duration" showname="Duration: 220\xc2\xb5s" size="0" pos="26" show="220">
+            <field name="_ws.expert" showname="Expert Info (Warning/Assumption): No preamble length information was available, assuming short preamble." size="0" pos="26">
+                <field name="wlan_radio.assumed.short_preamble" showname="No preamble length information was available, assuming short preamble." size="0" pos="0" show="" value=""/>
+                <field name="_ws.expert.message" showname="Message: No preamble length information was available, assuming short preamble." hide="yes" size="0" pos="0" show="No preamble length information was available, assuming short preamble."/>
+                <field name="_ws.expert.severity" showname="Severity level: Warning" size="0" pos="0" show="6291456"/>
+                <field name="_ws.expert.group" showname="Group: Assumption" size="0" pos="0" show="218103808"/>
+            </field>
+            <field name="wlan_radio.preamble" showname="Preamble: 96\xc2\xb5s" size="0" pos="26" show="96"/>
+            <field name="wlan_radio.start_tsf" showname="Start: 2486686\xc2\xb5s" size="0" pos="26" show="2486686"/>
+            <field name="wlan_radio.end_tsf" showname="End: 2486906\xc2\xb5s" size="0" pos="26" show="2486906"/>
+        </field>
+    </proto>
+    <proto name="wlan" showname="IEEE 802.11 Probe Request, Flags: ........" size="24" pos="26">
+        <field name="wlan.fc.type_subtype" showname="Type/Subtype: Probe Request (0x0004)" size="1" pos="26" show="4" value="40"/>
+        <field name="wlan.fc" showname="Frame Control Field: 0x4000" size="2" pos="26" show="0x00004000" value="4000">
+            <field name="wlan.fc.version" showname=".... ..00 = Version: 0" size="1" pos="26" show="0" value="0" unmaskedvalue="40"/>
+            <field name="wlan.fc.type" showname=".... 00.. = Type: Management frame (0)" size="1" pos="26" show="0" value="0" unmaskedvalue="40"/>
+            <field name="wlan.fc.subtype" showname="0100 .... = Subtype: 4" size="1" pos="26" show="4" value="4" unmaskedvalue="40"/>
+            <field name="wlan.flags" showname="Flags: 0x00" size="1" pos="27" show="0x00000000" value="00">
+                <field name="wlan.fc.ds" showname=".... ..00 = DS status: Not leaving DS or network is operating in AD-HOC mode (To DS: 0 From DS: 0) (0x0)" size="1" pos="27" show="0x00000000" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.tods" showname=".... ...0 = To DS: Frame is not entering DS" hide="yes" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.fromds" showname=".... ..0. = From DS: Frame is not exiting DS" hide="yes" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.frag" showname=".... .0.. = More Fragments: This is the last fragment" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.retry" showname=".... 0... = Retry: Frame is not being retransmitted" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.pwrmgt" showname="...0 .... = PWR MGT: STA will stay up" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.moredata" showname="..0. .... = More Data: No data buffered" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.protected" showname=".0.. .... = Protected flag: Data is not protected" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+                <field name="wlan.fc.order" showname="0... .... = Order flag: Not strictly ordered" size="1" pos="27" show="0" value="0" unmaskedvalue="00"/>
+            </field>
+        </field>
+        <field name="wlan.duration" showname=".000 0000 0000 0000 = Duration: 0 microseconds" size="2" pos="28" show="0" value="0" unmaskedvalue="0000"/>
+        <field name="wlan.ra" showname="Receiver address: Broadcast (ff:ff:ff:ff:ff:ff)" size="6" pos="30" show="ff:ff:ff:ff:ff:ff" value="ffffffffffff"/>
+        <field name="wlan.ra_resolved" showname="Receiver address (resolved): Broadcast" hide="yes" size="6" pos="30" show="Broadcast" value="ffffffffffff"/>
+        <field name="wlan.addr" showname="Hardware address: Broadcast (ff:ff:ff:ff:ff:ff)" hide="yes" size="6" pos="30" show="ff:ff:ff:ff:ff:ff" value="ffffffffffff"/>
+        <field name="wlan.addr_resolved" showname="Hardware address (resolved): Broadcast" hide="yes" size="6" pos="30" show="Broadcast" value="ffffffffffff"/>
+        <field name="wlan.da" showname="Destination address: Broadcast (ff:ff:ff:ff:ff:ff)" size="6" pos="30" show="ff:ff:ff:ff:ff:ff" value="ffffffffffff"/>
+        <field name="wlan.da_resolved" showname="Destination address (resolved): Broadcast" hide="yes" size="6" pos="30" show="Broadcast" value="ffffffffffff"/>
+        <field name="wlan.ta" showname="Transmitter address: SamsungE_00:83:30 (00:26:37:00:83:30)" size="6" pos="36" show="00:26:37:00:83:30" value="002637008330"/>
+        <field name="wlan.ta_resolved" showname="Transmitter address (resolved): SamsungE_00:83:30" hide="yes" size="6" pos="36" show="SamsungE_00:83:30" value="002637008330"/>
+        <field name="wlan.sa" showname="Source address: SamsungE_00:83:30 (00:26:37:00:83:30)" size="6" pos="36" show="00:26:37:00:83:30" value="002637008330"/>
+        <field name="wlan.sa_resolved" showname="Source address (resolved): SamsungE_00:83:30" hide="yes" size="6" pos="36" show="SamsungE_00:83:30" value="002637008330"/>
+        <field name="wlan.bssid" showname="BSS Id: Broadcast (ff:ff:ff:ff:ff:ff)" size="6" pos="42" show="ff:ff:ff:ff:ff:ff" value="ffffffffffff"/>
+        <field name="wlan.bssid_resolved" showname="BSS Id (resolved): Broadcast" hide="yes" size="6" pos="42" show="Broadcast" value="ffffffffffff"/>
+        <field name="wlan.addr" showname="Hardware address: SamsungE_00:83:30 (00:26:37:00:83:30)" hide="yes" size="6" pos="36" show="00:26:37:00:83:30" value="002637008330"/>
+        <field name="wlan.addr_resolved" showname="Hardware address (resolved): SamsungE_00:83:30" hide="yes" size="6" pos="36" show="SamsungE_00:83:30" value="002637008330"/>
+        <field name="wlan.addr" showname="Hardware address: Broadcast (ff:ff:ff:ff:ff:ff)" hide="yes" size="6" pos="42" show="ff:ff:ff:ff:ff:ff" value="ffffffffffff"/>
+        <field name="wlan.addr_resolved" showname="Hardware address (resolved): Broadcast" hide="yes" size="6" pos="42" show="Broadcast" value="ffffffffffff"/>
+        <field name="wlan.frag" showname=".... .... .... 0000 = Fragment number: 0" size="2" pos="48" show="0" value="0" unmaskedvalue="807e"/>
+        <field name="wlan.seq" showname="0111 1110 1000 .... = Sequence number: 2024" size="2" pos="48" show="2024" value="7E8" unmaskedvalue="807e"/>
+    </proto>
+    <proto name="wlan" showname="IEEE 802.11 wireless LAN" size="100" pos="50">
+        <field name="wlan.tagged.all" showname="Tagged parameters (100 bytes)" size="100" pos="50" show="" value="">
+            <field name="wlan.tag" showname="Tag: SSID parameter set: SSID_013196" size="13" pos="50" show="" value="">
+                <field name="wlan.tag.number" showname="Tag Number: SSID parameter set (0)" size="1" pos="50" show="0" value="00"/>
+                <field name="wlan.tag.length" showname="Tag length: 11" size="1" pos="51" show="11" value="0b"/>
+                <field name="wlan.ssid" showname="SSID: SSID_013196" size="11" pos="52" show="SSID_013196" value="535349445f303133313936"/>
+            </field>
+            <field name="wlan.tag" showname="Tag: Supported Rates 1, 2, 5.5, 11, [Mbit/sec]" size="6" pos="63" show="" value="">
+                <field name="wlan.tag.number" showname="Tag Number: Supported Rates (1)" size="1" pos="63" show="1" value="01"/>
+                <field name="wlan.tag.length" showname="Tag length: 4" size="1" pos="64" show="4" value="04"/>
+                <field name="wlan.supported_rates" showname="Supported Rates: 1 (0x02)" size="1" pos="65" show="2" value="02"/>
+                <field name="wlan.supported_rates" showname="Supported Rates: 2 (0x04)" size="1" pos="66" show="4" value="04"/>
+                <field name="wlan.supported_rates" showname="Supported Rates: 5.5 (0x0b)" size="1" pos="67" show="11" value="0b"/>
+                <field name="wlan.supported_rates" showname="Supported Rates: 11 (0x16)" size="1" pos="68" show="22" value="16"/>
+            </field>
+            <field name="wlan.tag" showname="Tag: Extended Supported Rates 6, 9, 12, 18, 24, 36, 48, 54, [Mbit/sec]" size="10" pos="69" show="" value="">
+                <field name="wlan.tag.number" showname="Tag Number: Extended Supported Rates (50)" size="1" pos="69" show="50" value="32"/>
+                <field name="wlan.tag.length" showname="Tag length: 8" size="1" pos="70" show="8" value="08"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 6 (0x0c)" size="1" pos="71" show="12" value="0c"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 9 (0x12)" size="1" pos="72" show="18" value="12"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 12 (0x18)" size="1" pos="73" show="24" value="18"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 18 (0x24)" size="1" pos="74" show="36" value="24"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 24 (0x30)" size="1" pos="75" show="48" value="30"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 36 (0x48)" size="1" pos="76" show="72" value="48"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 48 (0x60)" size="1" pos="77" show="96" value="60"/>
+                <field name="wlan.extended_supported_rates" showname="Extended Supported Rates: 54 (0x6c)" size="1" pos="78" show="108" value="6c"/>
+            </field>
+            <field name="wlan.tag" showname="Tag: HT Capabilities (802.11n D1.10)" size="28" pos="79" show="" value="">
+                <field name="wlan.tag.number" showname="Tag Number: HT Capabilities (802.11n D1.10) (45)" size="1" pos="79" show="45" value="2d"/>
+                <field name="wlan.tag.length" showname="Tag length: 26" size="1" pos="80" show="26" value="1a"/>
+                <field name="wlan.ht.capabilities" showname="HT Capabilities Info: 0x182c" size="2" pos="81" show="0x0000182c" value="2c18">
+                    <field name="wlan.ht.capabilities.ldpccoding" showname=".... .... .... ...0 = HT LDPC coding capability: Transmitter does not support receiving LDPC coded packets" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.width" showname=".... .... .... ..0. = HT Support channel width: Transmitter only supports 20MHz operation" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.sm" showname=".... .... .... 11.. = HT SM Power Save: SM Power Save disabled (0x3)" size="2" pos="81" show="0x00000003" value="3" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.green" showname=".... .... ...0 .... = HT Green Field: Transmitter is not able to receive PPDUs with Green Field (GF) preamble" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.short20" showname=".... .... ..1. .... = HT Short GI for 20MHz: Supported" size="2" pos="81" show="1" value="1" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.short40" showname=".... .... .0.. .... = HT Short GI for 40MHz: Not supported" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.txstbc" showname=".... .... 0... .... = HT Tx STBC: Not supported" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.rxstbc" showname=".... ..00 .... .... = HT Rx STBC: No Rx STBC support (0x0)" size="2" pos="81" show="0x00000000" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.delayedblockack" showname=".... .0.. .... .... = HT Delayed Block ACK: Transmitter does not support HT-Delayed BlockAck" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.amsdu" showname=".... 1... .... .... = HT Max A-MSDU length: 7935 bytes" size="2" pos="81" show="1" value="1" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.dsscck" showname="...1 .... .... .... = HT DSSS/CCK mode in 40MHz: Will/Can use DSSS/CCK in 40 MHz" size="2" pos="81" show="1" value="1" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.psmp" showname="..0. .... .... .... = HT PSMP Support: Won&#x27;t/Can&#x27;t support PSMP operation" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.40mhzintolerant" showname=".0.. .... .... .... = HT Forty MHz Intolerant: Use of 40 MHz transmissions unrestricted/allowed" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.lsig" showname="0... .... .... .... = HT L-SIG TXOP Protection support: Not supported" size="2" pos="81" show="0" value="0" unmaskedvalue="2c18"/>
+                </field>
+                <field name="wlan.ht.ampduparam" showname="A-MPDU Parameters: 0x1b" size="1" pos="83" show="0x0000001b" value="1b">
+                    <field name="wlan.ht.ampduparam.maxlength" showname=".... ..11 = Maximum Rx A-MPDU Length: 0x3 (65535[Bytes])" size="1" pos="83" show="0x00000003" value="3" unmaskedvalue="1b"/>
+                    <field name="wlan.ht.ampduparam.mpdudensity" showname="...1 10.. = MPDU Density: 8 [usec] (0x6)" size="1" pos="83" show="0x00000006" value="6" unmaskedvalue="1b"/>
+                    <field name="wlan.ht.ampduparam.reserved" showname="000. .... = Reserved: 0x0" size="1" pos="83" show="0x00000000" value="0" unmaskedvalue="1b"/>
+                </field>
+                <field name="wlan.ht.mcsset" showname="Rx Supported Modulation and Coding Scheme Set: MCS Set" size="16" pos="84" show="" value="">
+                    <field name="wlan.ht.mcsset.rxbitmask" showname="Rx Modulation and Coding Scheme (One bit per modulation): 1 spatial stream" size="10" pos="84" show="" value="">
+                        <field name="wlan.ht.mcsset.rxbitmask.0to7" showname=".... .... .... .... .... .... 1111 1111 = Rx Bitmask Bits 0-7: 0xff" size="4" pos="84" show="0x000000ff" value="FF" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.8to15" showname=".... .... .... .... 0000 0000 .... .... = Rx Bitmask Bits 8-15: 0x00" size="4" pos="84" show="0x00000000" value="0" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.16to23" showname=".... .... 0000 0000 .... .... .... .... = Rx Bitmask Bits 16-23: 0x00" size="4" pos="84" show="0x00000000" value="0" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.24to31" showname="0000 0000 .... .... .... .... .... .... = Rx Bitmask Bits 24-31: 0x00" size="4" pos="84" show="0x00000000" value="0" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.32" showname=".... .... .... .... .... .... .... ...0 = Rx Bitmask Bit 32: 0x0" size="4" pos="88" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.33to38" showname=".... .... .... .... .... .... .000 000. = Rx Bitmask Bits 33-38: 0x00" size="4" pos="88" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.39to52" showname=".... .... ...0 0000 0000 0000 0... .... = Rx Bitmask Bits 39-52: 0x0000" size="4" pos="88" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.53to76" showname="...0 0000 0000 0000 0000 0000 000. .... = Rx Bitmask Bits 53-76: 0x000000" size="4" pos="90" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    </field>
+                    <field name="wlan.ht.mcsset.highestdatarate" showname=".... ..00 0000 0000 = Highest Supported Data Rate: 0x000" size="2" pos="94" show="0x00000000" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.ht.mcsset.txsetdefined" showname=".... .... .... ...0 = Tx Supported MCS Set: Not defined" size="1" pos="96" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.ht.mcsset.txrxmcsnotequal" showname=".... .... .... ..0. = Tx and Rx MCS Set: Equal" size="1" pos="96" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.ht.mcsset.txmaxss" showname=".... .... .... 00.. = Maximum Number of Tx Spatial Streams Supported: 0x0, TX MCS Set Not Defined" size="1" pos="96" show="0x00000000" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.ht.mcsset.txunequalmod" showname=".... .... ...0 .... = Unequal Modulation: Not supported" size="1" pos="96" show="0" value="0" unmaskedvalue="00"/>
+                </field>
+                <field name="wlan.htex.capabilities" showname="HT Extended Capabilities: 0x0000" size="2" pos="100" show="0x00000000" value="0000">
+                    <field name="wlan.htex.capabilities.pco" showname=".... .... .... ...0 = Transmitter supports PCO: Not supported" size="2" pos="100" show="0" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.transtime" showname=".... .... .... .00. = Time needed to transition between 20MHz and 40MHz: No Transition (0x0)" size="2" pos="100" show="0x00000000" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.mcs" showname=".... ..00 .... .... = MCS Feedback capability: STA does not provide MCS feedback (0x0)" size="2" pos="100" show="0x00000000" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.htc" showname=".... .0.. .... .... = High Throughput: Not supported" size="2" pos="100" show="0" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.rdresponder" showname=".... 0... .... .... = Reverse Direction Responder: Not supported" size="2" pos="100" show="0" value="0" unmaskedvalue="0000"/>
+                </field>
+                <field name="wlan.txbf" showname="Transmit Beam Forming (TxBF) Capabilities: 0x00000000" size="4" pos="102" show="0x00000000" value="00000000">
+                    <field name="wlan.txbf.txbf" showname=".... .... .... .... .... .... .... ...0 = Transmit Beamforming: Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.rxss" showname=".... .... .... .... .... .... .... ..0. = Receive Staggered Sounding: Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.txss" showname=".... .... .... .... .... .... .... .0.. = Transmit Staggered Sounding: Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.rxndp" showname=".... .... .... .... .... .... .... 0... = Receive Null Data packet (NDP): Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.txndp" showname=".... .... .... .... .... .... ...0 .... = Transmit Null Data packet (NDP): Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.impltxbf" showname=".... .... .... .... .... .... ..0. .... = Implicit TxBF capable: Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.calibration" showname=".... .... .... .... .... .... 00.. .... = Calibration: incapable (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.csi" showname=".... .... .... .... .... ...0 .... .... = STA can apply TxBF using CSI explicit feedback: Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.uncompressed.tbf" showname=".... .... .... .... .... ..0. .... .... = STA can apply TxBF using uncompressed beamforming feedback matrix: Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.compressed.tbf" showname=".... .... .... .... .... .0.. .... .... = STA can apply TxBF using compressed beamforming feedback matrix: Not supported" size="4" pos="102" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.rcsi" showname=".... .... .... .... ...0 0... .... .... = Receiver can return explicit CSI feedback: not supported (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.uncompressed.rbf" showname=".... .... .... .... .00. .... .... .... = Receiver can return explicit uncompressed Beamforming Feedback Matrix: not supported (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.compressed.bf" showname=".... .... .... ...0 0... .... .... .... = STA can compress and use compressed Beamforming Feedback Matrix: not supported (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.mingroup" showname=".... .... .... .00. .... .... .... .... = Minimal grouping used for explicit feedback reports: No grouping supported (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.csinumant" showname=".... .... ...0 0... .... .... .... .... = Max antennae STA can support when CSI feedback required: 1 TX antenna sounding (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.uncompressed.maxant" showname=".... .... .00. .... .... .... .... .... = Max antennae STA can support when uncompressed Beamforming feedback required: 1 TX antenna sounding (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.compressed.maxant" showname=".... ...0 0... .... .... .... .... .... = Max antennae STA can support when compressed Beamforming feedback required: 1 TX antenna sounding (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.csi.maxrows" showname=".... .00. .... .... .... .... .... .... = Maximum number of rows of CSI explicit feedback: 1 row of CSI (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.channelest" showname="...0 0... .... .... .... .... .... .... = Maximum number of space time streams for which channel dimensionscan be simultaneously estimated: 1 space time stream (0x0)" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.reserved" showname="000. .... .... .... .... .... .... .... = Reserved: 0x0" size="4" pos="102" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                </field>
+                <field name="wlan.asel" showname="Antenna Selection (ASEL) Capabilities: 0x00" size="1" pos="106" show="0x00000000" value="00">
+                    <field name="wlan.asel.capable" showname=".... ...0 = Antenna Selection Capable: Not supported" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.txcsi" showname=".... ..0. = Explicit CSI Feedback Based Tx ASEL: Not supported" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.txif" showname=".... .0.. = Antenna Indices Feedback Based Tx ASEL: Not supported" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.csi" showname=".... 0... = Explicit CSI Feedback: Not supported" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.if" showname="...0 .... = Antenna Indices Feedback: Not supported" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.rx" showname="..0. .... = Rx ASEL: Not supported" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.sppdu" showname=".0.. .... = Tx Sounding PPDUs: Not supported" size="1" pos="106" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.reserved" showname="0... .... = Reserved: 0x0" size="1" pos="106" show="0x00000000" value="0" unmaskedvalue="00"/>
+                </field>
+            </field>
+            <field name="wlan.tag" showname="Tag: Vendor Specific: Broadcom" size="11" pos="107" show="" value="">
+                <field name="wlan.tag.number" showname="Tag Number: Vendor Specific (221)" size="1" pos="107" show="221" value="dd"/>
+                <field name="wlan.tag.length" showname="Tag length: 9" size="1" pos="108" show="9" value="09"/>
+                <field name="wlan.tag.oui" showname="OUI: 00:10:18 (Broadcom)" size="3" pos="109" show="4120" value="001018"/>
+                <field name="wlan.tag.vendor.oui.type" showname="Vendor Specific OUI Type: 2" size="1" pos="112" show="2" value="02"/>
+                <field name="wlan.tag.vendor.data" showname="Vendor Specific Data: 020000000000" size="6" pos="112" show="02:00:00:00:00:00" value="020000000000"/>
+            </field>
+            <field name="wlan.tag" showname="Tag: Vendor Specific: Epigram, Inc.: HT Capabilities (802.11n D1.10)" size="32" pos="118" show="" value="">
+                <field name="wlan.tag.number" showname="Tag Number: Vendor Specific (221)" size="1" pos="118" show="221" value="dd"/>
+                <field name="wlan.tag.length" showname="Tag length: 30" size="1" pos="119" show="30" value="1e"/>
+                <field name="wlan.tag.oui" showname="OUI: 00:90:4c (Epigram, Inc.)" size="3" pos="120" show="36940" value="00904c"/>
+                <field name="wlan.tag.vendor.oui.type" showname="Vendor Specific OUI Type: 51" size="1" pos="123" show="51" value="33"/>
+                <field name="wlan.vs.pren.type" showname="802.11n (Pre) Type: HT Capabilities (802.11n D1.10) (51)" size="1" pos="123" show="51" value="33"/>
+                <field name="wlan.vs.ht.capabilities" showname="HT Capabilities Info (VS): 0x182c" size="2" pos="124" show="0x0000182c" value="2c18">
+                    <field name="wlan.ht.capabilities.ldpccoding" showname=".... .... .... ...0 = HT LDPC coding capability: Transmitter does not support receiving LDPC coded packets" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.width" showname=".... .... .... ..0. = HT Support channel width: Transmitter only supports 20MHz operation" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.sm" showname=".... .... .... 11.. = HT SM Power Save: SM Power Save disabled (0x3)" size="2" pos="124" show="0x00000003" value="3" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.green" showname=".... .... ...0 .... = HT Green Field: Transmitter is not able to receive PPDUs with Green Field (GF) preamble" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.short20" showname=".... .... ..1. .... = HT Short GI for 20MHz: Supported" size="2" pos="124" show="1" value="1" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.short40" showname=".... .... .0.. .... = HT Short GI for 40MHz: Not supported" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.txstbc" showname=".... .... 0... .... = HT Tx STBC: Not supported" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.rxstbc" showname=".... ..00 .... .... = HT Rx STBC: No Rx STBC support (0x0)" size="2" pos="124" show="0x00000000" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.delayedblockack" showname=".... .0.. .... .... = HT Delayed Block ACK: Transmitter does not support HT-Delayed BlockAck" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.amsdu" showname=".... 1... .... .... = HT Max A-MSDU length: 7935 bytes" size="2" pos="124" show="1" value="1" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.dsscck" showname="...1 .... .... .... = HT DSSS/CCK mode in 40MHz: Will/Can use DSSS/CCK in 40 MHz" size="2" pos="124" show="1" value="1" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.psmp" showname="..0. .... .... .... = HT PSMP Support: Won&#x27;t/Can&#x27;t support PSMP operation" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.40mhzintolerant" showname=".0.. .... .... .... = HT Forty MHz Intolerant: Use of 40 MHz transmissions unrestricted/allowed" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                    <field name="wlan.ht.capabilities.lsig" showname="0... .... .... .... = HT L-SIG TXOP Protection support: Not supported" size="2" pos="124" show="0" value="0" unmaskedvalue="2c18"/>
+                </field>
+                <field name="wlan.vs.ht.ampduparam" showname="A-MPDU Parameters (VS): 0x1b" size="1" pos="126" show="0x0000001b" value="1b">
+                    <field name="wlan.ht.ampduparam.maxlength" showname=".... ..11 = Maximum Rx A-MPDU Length: 0x3 (65535[Bytes])" size="1" pos="126" show="0x00000003" value="3" unmaskedvalue="1b"/>
+                    <field name="wlan.ht.ampduparam.mpdudensity" showname="...1 10.. = MPDU Density: 8 [usec] (0x6)" size="1" pos="126" show="0x00000006" value="6" unmaskedvalue="1b"/>
+                    <field name="wlan.ht.ampduparam.reserved" showname="000. .... = Reserved: 0x0" size="1" pos="126" show="0x00000000" value="0" unmaskedvalue="1b"/>
+                </field>
+                <field name="wlan.vs.ht.mcsset" showname="Rx Supported Modulation and Coding Scheme Set (VS): MCS Set" size="16" pos="127" show="" value="">
+                    <field name="wlan.ht.mcsset.rxbitmask" showname="Rx Modulation and Coding Scheme (One bit per modulation): 1 spatial stream" size="10" pos="127" show="" value="">
+                        <field name="wlan.ht.mcsset.rxbitmask.0to7" showname=".... .... .... .... .... .... 1111 1111 = Rx Bitmask Bits 0-7: 0xff" size="4" pos="127" show="0x000000ff" value="FF" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.8to15" showname=".... .... .... .... 0000 0000 .... .... = Rx Bitmask Bits 8-15: 0x00" size="4" pos="127" show="0x00000000" value="0" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.16to23" showname=".... .... 0000 0000 .... .... .... .... = Rx Bitmask Bits 16-23: 0x00" size="4" pos="127" show="0x00000000" value="0" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.24to31" showname="0000 0000 .... .... .... .... .... .... = Rx Bitmask Bits 24-31: 0x00" size="4" pos="127" show="0x00000000" value="0" unmaskedvalue="ff000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.32" showname=".... .... .... .... .... .... .... ...0 = Rx Bitmask Bit 32: 0x0" size="4" pos="131" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.33to38" showname=".... .... .... .... .... .... .000 000. = Rx Bitmask Bits 33-38: 0x00" size="4" pos="131" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.39to52" showname=".... .... ...0 0000 0000 0000 0... .... = Rx Bitmask Bits 39-52: 0x0000" size="4" pos="131" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                        <field name="wlan.ht.mcsset.rxbitmask.53to76" showname="...0 0000 0000 0000 0000 0000 000. .... = Rx Bitmask Bits 53-76: 0x000000" size="4" pos="133" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    </field>
+                    <field name="wlan.ht.mcsset.highestdatarate" showname=".... ..00 0000 0000 = Highest Supported Data Rate: 0x000" size="2" pos="137" show="0x00000000" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.ht.mcsset.txsetdefined" showname=".... .... .... ...0 = Tx Supported MCS Set: Not defined" size="1" pos="139" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.ht.mcsset.txrxmcsnotequal" showname=".... .... .... ..0. = Tx and Rx MCS Set: Equal" size="1" pos="139" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.ht.mcsset.txmaxss" showname=".... .... .... 00.. = Maximum Number of Tx Spatial Streams Supported: 0x0, TX MCS Set Not Defined" size="1" pos="139" show="0x00000000" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.ht.mcsset.txunequalmod" showname=".... .... ...0 .... = Unequal Modulation: Not supported" size="1" pos="139" show="0" value="0" unmaskedvalue="00"/>
+                </field>
+                <field name="wlan.vs.htex.capabilities" showname="HT Extended Capabilities (VS): 0x0000" size="2" pos="143" show="0x00000000" value="0000">
+                    <field name="wlan.htex.capabilities.pco" showname=".... .... .... ...0 = Transmitter supports PCO: Not supported" size="2" pos="143" show="0" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.transtime" showname=".... .... .... .00. = Time needed to transition between 20MHz and 40MHz: No Transition (0x0)" size="2" pos="143" show="0x00000000" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.mcs" showname=".... ..00 .... .... = MCS Feedback capability: STA does not provide MCS feedback (0x0)" size="2" pos="143" show="0x00000000" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.htc" showname=".... .0.. .... .... = High Throughput: Not supported" size="2" pos="143" show="0" value="0" unmaskedvalue="0000"/>
+                    <field name="wlan.htex.capabilities.rdresponder" showname=".... 0... .... .... = Reverse Direction Responder: Not supported" size="2" pos="143" show="0" value="0" unmaskedvalue="0000"/>
+                </field>
+                <field name="wlan.vs.txbf" showname="Transmit Beam Forming (TxBF) Capabilities (VS): 0x00000000" size="4" pos="145" show="0x00000000" value="00000000">
+                    <field name="wlan.txbf.txbf" showname=".... .... .... .... .... .... .... ...0 = Transmit Beamforming: Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.rxss" showname=".... .... .... .... .... .... .... ..0. = Receive Staggered Sounding: Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.txss" showname=".... .... .... .... .... .... .... .0.. = Transmit Staggered Sounding: Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.rxndp" showname=".... .... .... .... .... .... .... 0... = Receive Null Data packet (NDP): Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.txndp" showname=".... .... .... .... .... .... ...0 .... = Transmit Null Data packet (NDP): Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.impltxbf" showname=".... .... .... .... .... .... ..0. .... = Implicit TxBF capable: Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.calibration" showname=".... .... .... .... .... .... 00.. .... = Calibration: incapable (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.csi" showname=".... .... .... .... .... ...0 .... .... = STA can apply TxBF using CSI explicit feedback: Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.uncompressed.tbf" showname=".... .... .... .... .... ..0. .... .... = STA can apply TxBF using uncompressed beamforming feedback matrix: Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.compressed.tbf" showname=".... .... .... .... .... .0.. .... .... = STA can apply TxBF using compressed beamforming feedback matrix: Not supported" size="4" pos="145" show="0" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.rcsi" showname=".... .... .... .... ...0 0... .... .... = Receiver can return explicit CSI feedback: not supported (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.uncompressed.rbf" showname=".... .... .... .... .00. .... .... .... = Receiver can return explicit uncompressed Beamforming Feedback Matrix: not supported (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.compressed.bf" showname=".... .... .... ...0 0... .... .... .... = STA can compress and use compressed Beamforming Feedback Matrix: not supported (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.mingroup" showname=".... .... .... .00. .... .... .... .... = Minimal grouping used for explicit feedback reports: No grouping supported (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.csinumant" showname=".... .... ...0 0... .... .... .... .... = Max antennae STA can support when CSI feedback required: 1 TX antenna sounding (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.uncompressed.maxant" showname=".... .... .00. .... .... .... .... .... = Max antennae STA can support when uncompressed Beamforming feedback required: 1 TX antenna sounding (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.fm.compressed.maxant" showname=".... ...0 0... .... .... .... .... .... = Max antennae STA can support when compressed Beamforming feedback required: 1 TX antenna sounding (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.csi.maxrows" showname=".... .00. .... .... .... .... .... .... = Maximum number of rows of CSI explicit feedback: 1 row of CSI (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.channelest" showname="...0 0... .... .... .... .... .... .... = Maximum number of space time streams for which channel dimensions can be simultaneously estimated: 1 space time stream (0x0)" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                    <field name="wlan.txbf.reserved" showname="000. .... .... .... .... .... .... .... = Reserved: 0x0" size="4" pos="145" show="0x00000000" value="0" unmaskedvalue="00000000"/>
+                </field>
+                <field name="wlan.vs.asel" showname="Antenna Selection (ASEL) Capabilities (VS): 0x00" size="1" pos="149" show="0x00000000" value="00">
+                    <field name="wlan.asel.capable" showname=".... ...0 = Antenna Selection Capable: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.txcsi" showname=".... ..0. = Explicit CSI Feedback Based Tx ASEL: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.txif" showname=".... .0.. = Antenna Indices Feedback Based Tx ASEL: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.csi" showname=".... 0... = Explicit CSI Feedback: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.if" showname="...0 .... = Antenna Indices Feedback: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.rx" showname="..0. .... = Rx ASEL: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.sppdu" showname=".0.. .... = Tx Sounding PPDUs: Not supported" size="1" pos="149" show="0" value="0" unmaskedvalue="00"/>
+                    <field name="wlan.asel.reserved" showname="0... .... = Reserved: 0x0" size="1" pos="149" show="0x00000000" value="0" unmaskedvalue="00"/>
+                </field>
+            </field>
+        </field>
+    </proto>
+</packet>
+</pdml>
